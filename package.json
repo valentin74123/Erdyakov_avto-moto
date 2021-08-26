@@ -2,20 +2,24 @@
   "name": "avto-moto",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eslint": "eslint --ext .jsx --ext .js src/",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
+    "test": "npm run eslint && npm run stylelint",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-htmlacademy": "2.1.0",
+    "node-sass": "^4.12.0",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +38,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "eslint-plugin-react": "^7.22.0",
+    "file-loader": "^6.2.0",
+    "normalize-scss": "^7.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   }
 }
