@@ -1,40 +1,18 @@
-$color: green;
-
-.app {
-  text-align: center;
-}
-
-.app-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.app-header {
-  background-color: $color;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.app-link {
-  color: #282c34;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@import "global/colors.scss";
+@import "global/viewports.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/navigation.scss";
+@import "blocks/avto-info.scss";
+@import "blocks/slider.scss";
+@import "blocks/information.scss";
+@import "blocks/indicators.scss";
+@import "blocks/tabs.scss";
+@import "blocks/specifications.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review-form.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";

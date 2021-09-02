@@ -39,7 +39,11 @@
       "last 1 safari version"
     ]
   },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
+  },
   "dependencies": {
+    "@reduxjs/toolkit": "1.5.0",
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.12.13",
@@ -48,6 +52,7 @@
     "css-loader": "^5.0.2",
     "eslint-plugin-react": "^7.22.0",
     "file-loader": "^6.2.0",
+    "moment": "2.29.1",
     "normalize-scss": "^7.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

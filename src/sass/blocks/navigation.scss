@@ -1,0 +1,19 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 68px;
+
+  &--footer {
+    column-gap: 60px;
+  }
+}
+
+.navigation__item-link {
+  font-family: "Open Sans semi-bold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-gray;
+
+  @include element-brightness;
+}

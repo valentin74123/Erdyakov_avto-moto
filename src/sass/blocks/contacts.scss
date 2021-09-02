@@ -1,0 +1,49 @@
+.contacts {
+  display: flex;
+  column-gap: 98px;
+}
+
+.contacts__list {
+  margin-left: 6px;
+  margin-top: -5px;
+}
+
+.contacts__item {
+  margin-bottom: 26px;
+  max-width: 250px;
+}
+
+.contacts__title {
+  font-family: "Open Sans bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark;
+  margin-bottom: 6px;
+
+  &--address {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__description {
+  font-family: "Open Sans semi-bold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $black;
+
+  &--link {
+    @include element-brightness;
+  }
+}
+
+.contacts__map {
+  width: 431px;
+  height: 271px;
+  border: none;
+  background-color: $gray;
+  background-image: url("../img/map-pin.svg"), url("../img/map.png");
+  background-position: 113px 70px, 0 0;
+  background-repeat: no-repeat;
+}

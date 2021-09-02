@@ -1,0 +1,17 @@
+.header {
+  background-color: $gray;
+}
+
+.header__wrapper {
+  @include element-width;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__navigation {
+  margin-right: 25px;
+}

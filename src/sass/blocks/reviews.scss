@@ -1,0 +1,150 @@
+.reviews {
+  position: relative;
+}
+
+.reviews__button-element {
+  position: absolute;
+  top: 0;
+  right: 27px;
+}
+
+.reviews__review-button {
+  font-family: "Open Sans regular", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $red;
+
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 15.5px 20px;
+  border: 1px solid $red;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+
+  @include element-hover-active-red;
+}
+
+.reviews__list {
+  margin-left: 6px;
+}
+
+.reviews__item {
+  width: 1170px;
+  margin-bottom: 17px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba($black, 0.2);
+}
+
+.reviews__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: $dark-gray;
+
+  margin-bottom: 12px;
+}
+
+.reviews__element {
+  &--advantages,
+  &--disadvantages {
+    margin-left: 19px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 7px;
+      left: -18px;
+      width: 9px;
+      height: 8px;
+    }
+  }
+
+  &--advantages {
+    &::before {
+      background-image: url("../img/plus.svg");
+    }
+  }
+
+  &--disadvantages {
+    &::before {
+      top: 10px;
+      background-repeat: no-repeat;
+      background-image: url("../img/minus.svg");
+    }
+  }
+
+  &--rating {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 26px;
+  }
+
+  &--date {
+    display: flex;
+  }
+}
+
+.reviews__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: $black;
+
+  margin-bottom: 13px;
+
+  &--bold {
+    font-family: "Open Sans semi-bold", "Arial", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+}
+
+.reviews__rating {
+  margin-right: 20px;
+}
+
+.reviews__star {
+  display: inline-block;
+
+  width: 17px;
+  height: 16px;
+
+  margin-right: 4px;
+
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+
+  &--active {
+    background-image: url("../img/star-active.svg");
+  }
+}
+
+.reviews__advises {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: $red;
+}
+
+.reviews__date {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba($black, 0.4);
+  margin-right: 26px;
+}
+
+.reviews__to-answer {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $red;
+
+  @include element-brightness;
+}

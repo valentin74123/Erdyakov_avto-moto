@@ -1,0 +1,30 @@
+.logo {
+  font-family: "Open Sans bold", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark-gray;
+  letter-spacing: 0.13em;
+  max-width: 60px;
+  margin-left: 81px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: -75px;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/logo.svg");
+  }
+}
+
+.logo span {
+  font-family: "Open Sans semi-bold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.13em;
+}

@@ -1,0 +1,31 @@
+.specifications__list {
+  margin-left: 6px;
+  width: 565px;
+}
+
+.specifications__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $light-gray;
+}
+
+.specifications__description,
+.specifications__value {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 272px;
+  height: auto;
+}
+
+.specifications__description {
+  color: $dark-gray;
+}
+
+.specifications__value {
+  color: $black;
+  text-align: right;
+}

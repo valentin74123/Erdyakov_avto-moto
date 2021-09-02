@@ -1,0 +1,15 @@
+.footer {
+  background-color: $gray;
+  margin-top: auto;
+}
+
+.footer__wrapper {
+  padding: 30px 0;
+
+  @include element-width;
+}
+
+.footer__navigation {
+  margin-left: 9px;
+  margin-right: 26px;
+}

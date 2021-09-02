@@ -1,0 +1,45 @@
+.indicators {
+  display: flex;
+  column-gap: 7px;
+  margin-bottom: 37px;
+}
+
+.indicators__item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: $dark-gray;
+  opacity: 0.5;
+
+  min-width: 70px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+  }
+
+  &--oil::before {
+    width: 53px;
+    background-image: url("../img/icon-oil.svg");
+  }
+
+  &--control-type::before {
+    background-image: url("../img/icon-control-type.svg");
+  }
+
+  &--speed::before {
+    background-image: url("../img/icon-speed.svg");
+  }
+
+  &--engine::before {
+    background-image: url("../img/icon-engine.svg");
+  }
+}
