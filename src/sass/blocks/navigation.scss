@@ -17,3 +17,27 @@
 
   @include element-brightness;
 }
+
+@media (max-width: $desktop-width) {
+  .navigation__list {
+    column-gap: 2vw;
+
+    &--footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 20px;
+    }
+  }
+
+  .navigation__item {
+    text-align: center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .navigation__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}

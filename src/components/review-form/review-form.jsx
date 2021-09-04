@@ -59,7 +59,7 @@ const ReviewForm = (props) => {
           <label className="visually-hidden" htmlFor="disadvantages">Недостатки</label>
           <input
             onChange={onValueChange}
-            className="review-form__input"
+            className="review-form__input review-form__input--disadvantages"
             type="text"
             id="disadvantages"
             name="disadvantages"

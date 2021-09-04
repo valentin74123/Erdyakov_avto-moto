@@ -29,3 +29,15 @@
   color: $black;
   text-align: right;
 }
+
+@media (max-width: $desktop-width) {
+  .specifications__list {
+    width: 80%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .specifications__list {
+    margin: 0 auto;
+  }
+}

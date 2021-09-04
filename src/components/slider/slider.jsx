@@ -18,7 +18,7 @@ const Slider = (props) => {
   return (
     <section className="slider">
       <div className="slider__img-wrapper">
-        <img className="slider__img" src={currentSlide} width="600" height="375" alt="Марпех 11" />
+        <img className="slider__img img" src={currentSlide} width="600" height="375" alt="Марпех 11" />
       </div>
 
       <div className="slider__wrapper">
@@ -39,7 +39,7 @@ const Slider = (props) => {
         <div className="slider__images">
           {previews.map((preview, i) => (
             <div key={preview + i} className="slider__small-img-wrapper">
-              <img className="slider__small-img" src={preview} width="128" height="80" alt="Марпех 11" />
+              <img className="slider__small-img img" src={preview} width="128" height="80" alt="Марпех 11" />
             </div>
           ))}
         </div>

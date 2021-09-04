@@ -20,7 +20,7 @@ const Information = () => {
       <div className="information__buttons">
         <a className="information__application-button link" href="#">Oставить заявку</a>
 
-        <a className="information__credit-button link" href="#">В кредит от 11 000 ₽</a>
+        <a className="information__credit-button link" href="#">В кредит от 11&nbsp;000&nbsp;₽</a>
       </div>
     </section>
   );

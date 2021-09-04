@@ -1,11 +1,11 @@
 import {extend} from "../../../utils/common";
 import {ActionType} from "../../actions";
-import {SliderImages} from '../../../const';
+import {sliderImages} from '../../../const';
 
 const initialState = {
-  previews: SliderImages,
-  slides: SliderImages,
-  currentSlide: SliderImages[0],
+  previews: sliderImages,
+  slides: sliderImages,
+  currentSlide: sliderImages[0],
 
   isLeftSliderButtonDisabled: true,
   isRightSliderButtonDisabled: false,

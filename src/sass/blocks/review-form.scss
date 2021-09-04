@@ -179,3 +179,42 @@
 
   @include element-hover-active-dark-red;
 }
+
+@media (max-width: $tablet-width) {
+  .review-form__form {
+    grid-template-rows: repeat(3, 30px);
+    row-gap: 10px;
+    grid-template-columns: repeat(2, 150px);
+    column-gap: 23px;
+  }
+
+  .review-form__wrapper {
+    padding: 25px;
+  }
+
+  .review-form__input {
+    &--disadvantages {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  }
+
+  .review-form__rating-title {
+    display: none;
+  }
+
+  .review-form__required-message {
+    top: -40px;
+  }
+
+  .review-form__star {
+    margin-left: 3px;
+  }
+
+  .review-form__required-wrapper {
+    &--textarea {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+}

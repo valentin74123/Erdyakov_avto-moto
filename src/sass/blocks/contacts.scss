@@ -47,3 +47,23 @@
   background-position: 113px 70px, 0 0;
   background-repeat: no-repeat;
 }
+
+@media (max-width: $desktop-width) {
+  .contacts {
+    column-gap: 10%;
+  }
+
+  .contacts__list {
+    width: 40%;
+  }
+
+  .contacts__item {
+    margin-bottom: 26px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .contacts__map {
+    width: 50%;
+  }
+}

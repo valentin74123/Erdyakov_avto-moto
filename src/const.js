@@ -4,7 +4,7 @@ export const TabName = {
   CONTACTS: `Contacts`,
 };
 
-export const SliderImages = [
+export const sliderImages = [
   `img/slide-1.jpg`,
   `img/slide-2.jpg`,
   `img/slide-3.jpg`,

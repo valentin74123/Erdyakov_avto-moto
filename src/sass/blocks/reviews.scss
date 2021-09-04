@@ -148,3 +148,16 @@
 
   @include element-brightness;
 }
+
+@media (max-width: $desktop-width) {
+  .reviews__item {
+    width: 80%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .reviews__review-button {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+}

@@ -35,3 +35,14 @@
     color: $white;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .tabs__link {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tabs__list {
+    flex-direction: column;
+  }
+}

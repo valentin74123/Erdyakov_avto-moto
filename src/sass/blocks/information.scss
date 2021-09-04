@@ -84,3 +84,15 @@
 
   @include element-hover-active-red;
 }
+
+@media (max-width: $desktop-width) {
+  .information__buttons {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .information__application-button,
+  .information__credit-button {
+    margin: 0;
+  }
+}
