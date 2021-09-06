@@ -14,10 +14,14 @@
 
   &--footer {
     column-gap: 0;
-    max-width: 1170px;
+    max-width: 1166px;
 
     .navigation__item {
       margin-right: 66px;
+    }
+
+    .navigation__item:nth-last-child(2) {
+      margin-right: 53px;
     }
   }
 }
