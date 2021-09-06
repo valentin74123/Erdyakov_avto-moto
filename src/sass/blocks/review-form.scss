@@ -25,13 +25,17 @@
 
 .review-form__close-button {
   position: absolute;
-  top: 25px;
-  right: 24px;
+  top: 18px;
+  right: 17px;
   width: 15px;
   height: 15px;
+  background: inherit;
   background-image: url("../img/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
   cursor: pointer;
+  padding: 15px;
 
   @include element-brightness;
 }
@@ -136,8 +140,6 @@
 }
 
 .review-form__radio {
-  display: none;
-
   &:nth-of-type(1):checked ~ .review-form__star:nth-of-type(1),
   &:nth-of-type(2):checked ~ .review-form__star:nth-of-type(-n+2),
   &:nth-of-type(3):checked ~ .review-form__star:nth-of-type(-n+3),
@@ -156,6 +158,12 @@
 
   cursor: pointer;
   margin-left: 8px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $black;
+    box-sizing: border-box;
+  }
 }
 
 .review-form__submit-button {
@@ -170,6 +178,7 @@
   text-transform: uppercase;
   background-color: $red;
   border: none;
+  cursor: pointer;
 
   padding: 15px 17px;
   width: 190px;

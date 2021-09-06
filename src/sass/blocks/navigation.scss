@@ -1,10 +1,24 @@
 .navigation__list {
   display: flex;
-  justify-content: space-between;
-  column-gap: 68px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  max-width: 800px;
+
+  .navigation__item {
+    margin-right: 68px;
+  }
+
+  .navigation__item:last-of-type {
+    margin-right: 0;
+  }
 
   &--footer {
-    column-gap: 60px;
+    column-gap: 0;
+    max-width: 1170px;
+
+    .navigation__item {
+      margin-right: 66px;
+    }
   }
 }
 
@@ -20,12 +34,17 @@
 
 @media (max-width: $desktop-width) {
   .navigation__list {
-    column-gap: 2vw;
+    .navigation__item {
+      margin-right: 30px;
+    }
 
     &--footer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      row-gap: 20px;
+
+      .navigation__item {
+        margin-right: 0;
+      }
     }
   }
 
@@ -39,5 +58,9 @@
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 10px;
+
+    .navigation__item {
+      margin-right: 0;
+    }
   }
 }

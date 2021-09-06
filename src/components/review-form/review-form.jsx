@@ -75,7 +75,7 @@ const ReviewForm = (props) => {
                 {(i) => (
                   <input
                     key={i}
-                    className="review-form__radio"
+                    className="review-form__radio visually-hidden"
                     type="radio"
                     id={`star-${i + 1}`}
                     name="rating"
@@ -88,7 +88,7 @@ const ReviewForm = (props) => {
 
               <Repeat numberOfRepetitions={5}>
                 {(i) => (
-                  <label key={i} className="review-form__star" htmlFor={`star-${i + 1}`} tabIndex="0">
+                  <label key={i} className="review-form__star" htmlFor={`star-${i + 1}`}>
                     <span className="visually-hidden">Рейтинг: {i + 1}</span>
                   </label>
                 )}
