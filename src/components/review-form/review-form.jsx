@@ -10,10 +10,22 @@ const ReviewForm = (props) => {
     onSubmit
   } = props;
 
+  const onFocusUp = () => {
+    const elemet = document.querySelector(`.review-form__close-button`);
+    elemet.focus();
+  };
+
+  const osFocusDown = () => {
+    const elemet = document.querySelector(`.review-form__submit-button`);
+    elemet.focus();
+  };
+
   return (
     <section className="review-form" onClick={onReviewFormClose}>
       <div className="review-form__wrapper">
         <h3 className="review-form__title text-margin">Оставить отзыв</h3>
+
+        <span onFocus={osFocusDown} tabIndex="0"></span>
 
         <button className="review-form__close-button" type="button" onClick={onReviewFormClose}>
           <span className="visually-hidden">Закрыть окно</span>
@@ -115,6 +127,7 @@ const ReviewForm = (props) => {
           </div>
 
           <button className="review-form__submit-button" type="submit">Оставить отзыв</button>
+          <span onFocus={onFocusUp} tabIndex="0"></span>
         </form>
       </div>
     </section>

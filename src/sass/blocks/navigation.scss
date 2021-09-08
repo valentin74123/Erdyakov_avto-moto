@@ -49,6 +49,10 @@
       .navigation__item {
         margin-right: 0;
       }
+
+      .navigation__item:nth-last-child(2) {
+        margin-right: 0;
+      }
     }
   }
 

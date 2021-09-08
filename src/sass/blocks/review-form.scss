@@ -8,10 +8,6 @@
   z-index: 3;
 }
 
-.review-form--opened {
-  display: block;
-}
-
 .review-form__title {
   font-family: "Open Sans semi-bold", "Arial", sans-serif;
   font-weight: 600;
@@ -147,6 +143,15 @@
   &:nth-of-type(5):checked ~ .review-form__star:nth-of-type(-n+5) {
     background-image: url("../img/form-star-active.svg");
   }
+
+  &:focus:nth-of-type(1) ~ .review-form__star:nth-of-type(1),
+  &:focus:nth-of-type(2):checked ~ .review-form__star:nth-of-type(-n+2),
+  &:focus:nth-of-type(3):checked ~ .review-form__star:nth-of-type(-n+3),
+  &:focus:nth-of-type(4):checked ~ .review-form__star:nth-of-type(-n+4),
+  &:focus:nth-of-type(5):checked ~ .review-form__star:nth-of-type(-n+5) {
+    border: 1px solid $black;
+    box-sizing: border-box;
+  }
 }
 
 .review-form__star {
@@ -159,8 +164,7 @@
   cursor: pointer;
   margin-left: 8px;
 
-  &:hover,
-  &:focus {
+  &:hover {
     border: 1px solid $black;
     box-sizing: border-box;
   }

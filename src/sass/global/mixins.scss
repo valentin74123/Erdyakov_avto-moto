@@ -12,8 +12,8 @@
 @mixin element-width {
   margin: 0 auto;
   width: 1161px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 11px;
+  padding-left: 11px;
 
   @media (max-width: $desktop-width) {
     width: 90%;
